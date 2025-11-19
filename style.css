@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #1f1f1f, #111);
+}
+
+.banner {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.banner:hover {
+    transform: scale(1.05);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #f39c12;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+nav {
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #f39c12;
+    margin-bottom: 30px;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project {
+    background-color: #1a1a1a;
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project h3 {
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+
+.project p {
+    color: #ddd;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    align-items:last baseline;
+    padding: 25px 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    color: orange;
+}
+
+@media (max-width: 768px) {
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
